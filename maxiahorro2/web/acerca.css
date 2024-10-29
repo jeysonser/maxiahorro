@@ -1,0 +1,146 @@
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    font-weight: bolder;
+}
+
+.about-us {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+h1 {
+    text-align: center;
+    color: #000000;
+    margin-bottom: 40px;
+    font-size: 30px;
+}
+
+h3 {
+    color: #000000;
+}
+
+.company-info, .location {
+    background-color: #fffc3e;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 40px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.company-info {
+    display: flex;
+    flex-direction: column;
+}
+
+.company-image, .company-text {
+    flex-basis: 100%;
+}
+
+.company-image img, .location-map img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+.location-content {
+    display: flex;
+    flex-direction: column;
+}
+
+.location-map, .location-info {
+    flex-basis: 100%;
+}
+
+.social-media {
+    text-align: center;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.social-icons a {
+    transition: transform 0.4s;
+}
+
+.social-icons a:hover {
+    transform: scale(1.1);
+}
+
+.fa-map-marker-alt {
+    color: #e74c3c;
+    margin-right: 10px;
+}
+
+@media (min-width: 768px) {
+    .company-info {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+
+    .company-image {
+        flex-basis: 48%;
+        margin-right: 4%;
+    }
+
+    .company-text {
+        flex-basis: 48%;
+    }
+
+    .company-image img {
+        margin-bottom: 0;
+    }
+
+    .location-content {
+        flex-direction: row-reverse;
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+
+    .location-map {
+        flex-basis: 48%;
+        margin-left: 4%;
+    }
+
+    .location-info {
+        flex-basis: 48%;
+    }
+
+    .location-map img {
+        margin-bottom: 0;
+    }
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #ff4141;
+    color: white;
+    font-size: 16px;
+    text-align: center;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #c22121;
+}
+
+.logo {
+    height: 40px;
+    width: 40px;
+}
